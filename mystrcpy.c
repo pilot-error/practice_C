@@ -3,7 +3,6 @@
 //Learn to spot the pitfalls of C programming. Strings. Memory... the good stuff.
 //
 //Start reading down in Main()
-//
 
 //First attempt at "Ian's" strcpy.
 char* iancpy1(char* dest,char* orig){
@@ -23,7 +22,7 @@ char* iancpy2(char* dest,char* orig){
     dest[i]=orig[i];
     i++;
   }
-  dest[i]='\0';
+  dest[i]='\0'; //This ensures the copied string is the right length
   return dest;
 }
 char* goodcpy(char* orig){
@@ -39,6 +38,7 @@ char* goodcpy(char* orig){
   }
   dest[i]='\0';
   return dest;
+  //I still wonder if there is a better way to do this.
 }
 
 //Start here
