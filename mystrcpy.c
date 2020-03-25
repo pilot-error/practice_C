@@ -25,6 +25,8 @@ char* iancpy2(char* dest,char* orig){
   dest[i]='\0'; //This ensures the copied string is the right length
   return dest;
 }
+
+//This is how I wished strcpy worked, give it a string, it returns a new string.
 char* goodcpy(char* orig){
   int i = 0;
   while(orig[i]!='\0'){
